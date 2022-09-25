@@ -1,0 +1,32 @@
+{
+    "name": "mnemesong/records-helper",
+    "description": "Helper for init records on storage layer",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "mnemesong/composer-reader":  "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mnemesong\\RecordsHelper\\": "src/",
+            "Mnemesong\\RecordsHelperTestUnit\\": "test-unit/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pantagruel74",
+            "email": "tostar74@mail.ru"
+        }
+    ],
+    "scripts": {
+        "test:unit": "phpunit test-unit",
+        "lint:src": "phpstan analyse src --level 9",
+        "lint:unit": "phpstan analyse test-unit --level 9"
+    },
+    "minimum-stability": "stable"
+}
